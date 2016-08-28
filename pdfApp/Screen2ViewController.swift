@@ -87,8 +87,8 @@ class Screen2ViewController: UIViewController, UITextFieldDelegate, UIPickerView
             
         }
         
-        MainScreenViewController.introAnswer1 = self.picker.text!
-        MainScreenViewController.introAnswer2 = self.descriptionField.text!
+        introAnswer1 = self.picker.text!
+        introAnswer2 = self.descriptionField.text!
         
         let next = self.storyboard?.instantiateViewControllerWithIdentifier("MainScreenViewController") as! MainScreenViewController!
         self.navigationController?.pushViewController(next, animated: true)

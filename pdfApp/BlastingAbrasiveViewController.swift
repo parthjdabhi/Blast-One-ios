@@ -123,12 +123,12 @@ class BlastingAbrasiveViewController: UIViewController {
             self.presentViewController(alertController, animated: true, completion:nil)
         }
         
-        MainScreenViewController.abrasiveType = self.type.text!
-        MainScreenViewController.abrasiveGrade = self.grade.text!
-        MainScreenViewController.abrasiveStorage = self.storage.text!
-        MainScreenViewController.abrasiveOnsite = self.onSite.text!
-        MainScreenViewController.abrasiveRequirements = self.requirements.text!
-        MainScreenViewController.abrasiveComments = self.comments.text!
+        abrasiveType = self.type.text!
+        abrasiveGrade = self.grade.text!
+        abrasiveStorage = self.storage.text!
+        abrasiveOnsite = self.onSite.text!
+        abrasiveRequirements = self.requirements.text!
+        abrasiveComments = self.comments.text!
         
         let next = self.storyboard?.instantiateViewControllerWithIdentifier("EquipmentObservationViewController") as! EquipmentObservationsViewController!
         self.navigationController?.pushViewController(next, animated: true)

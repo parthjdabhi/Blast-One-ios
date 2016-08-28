@@ -119,13 +119,13 @@ class PressureChecksViewController: UIViewController {
             
         }
         
-        MainScreenViewController.pressureCheck1 = self.field1.text!
-        MainScreenViewController.pressureCheck2 = self.field2.text!
-        MainScreenViewController.pressureCheck3 = self.field3.text!
-        MainScreenViewController.pressureCheck4 = self.field4.text!
-        MainScreenViewController.pressureCheck5 = self.field5.text!
-        MainScreenViewController.pressureCheck6 = self.field6.text!
-        MainScreenViewController.pressureCheck7 = self.field7.text!
+        pressureCheck1 = self.field1.text!
+        pressureCheck2 = self.field2.text!
+        pressureCheck3 = self.field3.text!
+        pressureCheck4 = self.field4.text!
+        pressureCheck5 = self.field5.text!
+        pressureCheck6 = self.field6.text!
+        pressureCheck7 = self.field7.text!
         
         let next = self.storyboard?.instantiateViewControllerWithIdentifier("MainScreenViewController") as! MainScreenViewController!
         self.navigationController?.pushViewController(next, animated: true)

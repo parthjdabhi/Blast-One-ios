@@ -141,11 +141,11 @@ class AirCompressorViewController: UIViewController {
             self.presentViewController(alertController, animated: true, completion:nil)
         }
         
-        MainScreenViewController.airCompressorBrand = self.brandField.text!
-        MainScreenViewController.airCompressorSize = self.sizeField.text!
-        MainScreenViewController.airCompressorPressure = self.pressurePSI.text!
-        MainScreenViewController.airCompressorOptions = self.optionsAnswer
-        MainScreenViewController.airDryerComments = self.commentsField.text!
+        airCompressorBrand = self.brandField.text!
+        airCompressorSize = self.sizeField.text!
+        airCompressorPressure = self.pressurePSI.text!
+        airCompressorOptions = self.optionsAnswer
+        airDryerComments = self.commentsField.text!
         
         let next = self.storyboard?.instantiateViewControllerWithIdentifier("EquipmentObservationViewController") as! EquipmentObservationsViewController!
         self.navigationController?.pushViewController(next, animated: true)

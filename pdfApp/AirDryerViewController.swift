@@ -106,10 +106,10 @@ class AirDryerViewController: UIViewController {
                 self.presentViewController(alertController, animated: true, completion:nil)
             }
         
-        MainScreenViewController.airDryerBrand = self.brand.text!
-        MainScreenViewController.airDryerSize = self.size.text!
-        MainScreenViewController.airDryerPressure = self.pressure.text!
-        MainScreenViewController.airDryerComments = self.comments.text!
+        airDryerBrand = self.brand.text!
+        airDryerSize = self.size.text!
+        airDryerPressure = self.pressure.text!
+        airDryerComments = self.comments.text!
         
         let next = self.storyboard?.instantiateViewControllerWithIdentifier("EquipmentObservationViewController") as! EquipmentObservationsViewController!
         self.navigationController?.pushViewController(next, animated: true)

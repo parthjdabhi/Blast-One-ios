@@ -27,10 +27,12 @@ import MessageUI
 class PreviewViewController: UIViewController, UIWebViewDelegate {
 
     @IBOutlet weak var webPreview: UIWebView!
+    @IBOutlet weak var btnBack: UIButton?
+    @IBOutlet weak var btnPDF: UIButton?
     
     var invoiceInfo: [String: AnyObject]!
     
-    var invoiceComposer: InvoiceComposer!
+    var osaComposer: OSAComposer!
     
     var HTMLContent: String!
     
@@ -99,7 +101,7 @@ class PreviewViewController: UIViewController, UIWebViewDelegate {
     }
     
     @IBAction func exportToPDF(sender: AnyObject) {
-        invoiceComposer.exportHTMLContentToPDF(HTMLContent)
+        osaComposer.exportHTMLContentToPDF(HTMLContent)
         showOptionsAlert()
     }
     
@@ -107,7 +109,7 @@ class PreviewViewController: UIViewController, UIWebViewDelegate {
     // MARK: Custom Methods
     
     func createInvoiceAsHTML() {
-        invoiceComposer = InvoiceComposer()
+        osaComposer = OSAComposer()
         
         //let url = NSBundle.mainBundle().URLForResource("invoice", withExtension: "html")
         //let html = try! String(contentsOfURL: url!)
@@ -115,28 +117,31 @@ class PreviewViewController: UIViewController, UIWebViewDelegate {
         //var HTMLContent = try String(contentsOfFile: pathToInvoiceHTMLTemplate!)
         //webPreview.loadHTMLString(html, baseURL: base)
         
-        if let invoiceHTML = invoiceComposer.renderInvoice() {
+        if let osaHTML = osaComposer.renderInvoice() {
             
             //let html = invoiceComposer.pathToInvoiceHTMLTemplate
             //let FormUrl = NSURL(string: html ?? "")
-            let base = NSBundle.mainBundle().URLForResource(InvoiceComposer.FileName, withExtension: InvoiceComposer.FileExt)!.URLByDeletingLastPathComponent
-            webPreview.loadHTMLString(invoiceHTML, baseURL: base)
-            HTMLContent = invoiceHTML
+            let base = NSBundle.mainBundle().URLForResource(OSAComposer.FileName, withExtension: OSAComposer.FileExt)!.URLByDeletingLastPathComponent
+            webPreview.loadHTMLString(osaHTML, baseURL: base)
+            HTMLContent = osaHTML
             
         }
     }
     
-    
-    
-    func showOptionsAlert() {
+    func showOptionsAlert()
+    {
         let pdfData = createPdfFile(webPreview.viewPrintFormatter())
         pdfData.writeToFile("\(AppDelegate.getAppDelegate().getDocDir())/OSA_Form_Test1.pdf", atomically: true)
+        
+        print("Generated PDF file written to document path : \(AppDelegate.getAppDelegate().getDocDir())/OSA_Form_Test1.pdf")
+        
         
         let alertController = UIAlertController(title: "Yeah!", message: "Your OSA Form has been successfully printed to a PDF file.\n\nWhat do you want to do now?", preferredStyle: UIAlertControllerStyle.Alert)
         
         let actionPreview = UIAlertAction(title: "Preview it", style: UIAlertActionStyle.Default) { (action) in
             let request = NSURLRequest(URL: NSURL(string: "\(AppDelegate.getAppDelegate().getDocDir())/OSA_Form_Test1.pdf")!)
             self.webPreview.loadRequest(request)
+            self.btnPDF?.hidden = true
         }
         
         let actionEmail = UIAlertAction(title: "Send by Email", style: UIAlertActionStyle.Default) { (action) in
@@ -145,7 +150,7 @@ class PreviewViewController: UIViewController, UIWebViewDelegate {
             })
         }
         
-        let actionNothing = UIAlertAction(title: "Nothing", style: UIAlertActionStyle.Default) { (action) in
+        let actionNothing = UIAlertAction(title: "Close", style: UIAlertActionStyle.Default) { (action) in
             
         }
         
@@ -156,13 +161,12 @@ class PreviewViewController: UIViewController, UIWebViewDelegate {
         presentViewController(alertController, animated: true, completion: nil)
     }
     
-    
-    
     func sendEmail() {
         if MFMailComposeViewController.canSendMail() {
+            let pdfFile = "\(AppDelegate.getAppDelegate().getDocDir())/OSA_Form_Test1.pdf"  //osaComposer.pdfFilename
             let mailComposeViewController = MFMailComposeViewController()
             mailComposeViewController.setSubject("OSA Form")
-            mailComposeViewController.addAttachmentData(NSData(contentsOfFile: invoiceComposer.pdfFilename)!, mimeType: "application/pdf", fileName: "OSA Form \(NSDate())")
+            mailComposeViewController.addAttachmentData(NSData(contentsOfFile: pdfFile)!, mimeType: "application/pdf", fileName: "OSA Form \(NSDate())")
             presentViewController(mailComposeViewController, animated: true, completion: nil)
         }
     }
@@ -173,15 +177,29 @@ class PreviewViewController: UIViewController, UIWebViewDelegate {
     }
     
     func createPdfFile(printFormatter: UIViewPrintFormatter) -> NSData {
-        let renderer = UIPrintPageRenderer()
+        
+        let renderer = CustomPrintPageRenderer()
+        
+//        let printFormatter = UIMarkupTextPrintFormatter(markupText: HTMLContent)
+//        printPageRenderer.addPrintFormatter(printFormatter, startingAtPageAtIndex: 0)
+//        
+//        let pdfData = drawPDFUsingPrintPageRenderer(printPageRenderer)
+//        
+//        pdfFilename = "\(AppDelegate.getAppDelegate().getDocDir())/OSA_Form123.pdf"
+//        pdfData.writeToFile(pdfFilename, atomically: true)
+//        
+//        print(pdfFilename)
+        
+        //let renderer = UIPrintPageRenderer()
         renderer.addPrintFormatter(printFormatter, startingAtPageAtIndex: 0);
         //#define kPaperSizeA4 CGSizeMake(595.2,841.8)
-        let paperSize = CGSizeMake(595.2, 841.8)
+        let paperSize = CGSizeMake(886, 841.8)    //(595.2, 841.8)
         //let paperSize = CGSizeMake(self.view.frame.size.width, self.view.frame.size.height)
         let printableRect = CGRectMake(0, 0, paperSize.width, paperSize.height)
         let paperRect = CGRectMake(0, 0, paperSize.width, paperSize.height);
+        //let paperRect = CGRectMake(0, 0, 595.2, 841.8);
         renderer.setValue(NSValue(CGRect: paperRect), forKey: "paperRect")
-        renderer.setValue(NSValue(CGRect: printableRect), forKey: "printableRect")
+        renderer.setValue(NSValue(CGRect: paperRect), forKey: "printableRect")
         return renderer.printToPDF()
     }
     

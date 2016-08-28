@@ -121,11 +121,11 @@ class BlastAccessoriesViewController: UIViewController {
             self.presentViewController(alertController, animated: true, completion:nil)
         }
         
-        MainScreenViewController.accessoriesExtension = self.extensionHose.text!
-        MainScreenViewController.accessoriesWhipHose = self.whiphose.text!
-        MainScreenViewController.accessoriesBlast = self.blast.text!
-        MainScreenViewController.accessoriesDeadman = self.deadman.text!
-        MainScreenViewController.accessoriesComments = self.comments.text!
+        accessoriesExtension = self.extensionHose.text!
+        accessoriesWhipHose = self.whiphose.text!
+        accessoriesBlast = self.blast.text!
+        accessoriesDeadman = self.deadman.text!
+        accessoriesComments = self.comments.text!
         
         let next = self.storyboard?.instantiateViewControllerWithIdentifier("EquipmentObservationViewController") as! EquipmentObservationsViewController!
         self.navigationController?.pushViewController(next, animated: true)

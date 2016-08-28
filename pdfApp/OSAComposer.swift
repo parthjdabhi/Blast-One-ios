@@ -8,10 +8,10 @@
 
 import UIKit
 
-class InvoiceComposer: NSObject {
+class OSAComposer: NSObject {
 
-    static let FileName = "OSA_Form"    //OSA_Form,invoice
-    static let FileExt = "htm"     //htm,html
+    static let FileName = "index"    //OSA_Form,invoice
+    static let FileExt = "html"     //htm,html
     let pathToInvoiceHTMLTemplate = NSBundle.mainBundle().pathForResource(FileName, ofType: FileExt)
     
     var pdfFilename: String!
@@ -32,11 +32,32 @@ class InvoiceComposer: NSObject {
             HTMLContent = HTMLContent.stringByReplacingOccurrencesOfString("#img_header#", withString: (NSBundle.mainBundle().pathForResource("img_header", ofType: "jpg") ?? ""))
             HTMLContent = HTMLContent.stringByReplacingOccurrencesOfString("#img_footer#", withString: (NSBundle.mainBundle().pathForResource("img_footer", ofType: "jpg") ?? ""))
             
-            // Invoice date.
+            // * * * * * * * Start Page 1 * * * * * * * *
+            /*#er_consultant#
+            #er_date#
+            #er_customer#
+            #er_facility#
+            #er_productprocess#
+            #er_jobdetail#
+            #job_condition#
+            #job_condition#
+            #js_pic# =
+             <div class="img-col">
+             <img src="#js_pic1#" alt="Job Site Picture" style="width:100%;" />
+             </div>
+            #js_comments# */
+            HTMLContent = HTMLContent.stringByReplacingOccurrencesOfString("#er_consultant#", withString: "\(nameOfConsultant ?? "")")
             HTMLContent = HTMLContent.stringByReplacingOccurrencesOfString("#er_date#", withString: "\(NSDate())")
+            HTMLContent = HTMLContent.stringByReplacingOccurrencesOfString("#er_customer#", withString: "\(nameOfCustomer ?? "")")
+            HTMLContent = HTMLContent.stringByReplacingOccurrencesOfString("#er_facility#", withString: "\(introAnswer1 ?? "")")
+            HTMLContent = HTMLContent.stringByReplacingOccurrencesOfString("#er_productprocess#", withString: "\(nameOfCustomer ?? "")")
+            HTMLContent = HTMLContent.stringByReplacingOccurrencesOfString("#er_jobdetail#", withString: "\(introAnswer2 ?? "")")
+            HTMLContent = HTMLContent.stringByReplacingOccurrencesOfString("#job_condition#", withString: "\(nameOfCustomer ?? "")")
+            HTMLContent = HTMLContent.stringByReplacingOccurrencesOfString("#js_pic#", withString: "\("job-pic.jpeg")")
             
-            // Recipient info.
-            HTMLContent = HTMLContent.stringByReplacingOccurrencesOfString("#RECIPIENT_INFO#", withString: "Test\nString line".stringByReplacingOccurrencesOfString("\n", withString: "<br>"))
+            //HTMLContent = HTMLContent.stringByReplacingOccurrencesOfString("#RECIPIENT_INFO#", withString: "Test\nString line".stringByReplacingOccurrencesOfString("\n", withString: "<br>"))
+
+            // * * * * * * * Finish Page 1 * * * * * * * *
             
             // The HTML code is ready.
             return HTMLContent
@@ -58,7 +79,7 @@ class InvoiceComposer: NSObject {
         
         let pdfData = drawPDFUsingPrintPageRenderer(printPageRenderer)
         
-        pdfFilename = "\(AppDelegate.getAppDelegate().getDocDir())/OSA_Form123.pdf"
+        pdfFilename = "\(AppDelegate.getAppDelegate().getDocDir())/OSA_Form_customPrint.pdf"
         pdfData.writeToFile(pdfFilename, atomically: true)
         
         print(pdfFilename)

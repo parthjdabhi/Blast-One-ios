@@ -188,15 +188,15 @@ class CustomerInformationViewController: UIViewController {
             
         }
         
-        MainScreenViewController.nameOfConsultant = self.consultantName.text!
-        MainScreenViewController.nameOfSalesRep = self.salesRep.text!
-        MainScreenViewController.nameOfCustomer = self.customerName.text!
-        MainScreenViewController.theCustomerContact = self.customerContacts.text!
-        MainScreenViewController.theProjectName = self.projectName.text!
-        MainScreenViewController.theDate = self.date.text!
-        MainScreenViewController.theAddress = self.address.text!
-        MainScreenViewController.theTimeArrived = self.timeArrive.text!
-        MainScreenViewController.theTimeDeparted = self.timeDepart.text!
+        nameOfConsultant = self.consultantName.text!
+        nameOfSalesRep = self.salesRep.text!
+        nameOfCustomer = self.customerName.text!
+        theCustomerContact = self.customerContacts.text!
+        theProjectName = self.projectName.text!
+        theDate = self.date.text!
+        theAddress = self.address.text!
+        theTimeArrived = self.timeArrive.text!
+        theTimeDeparted = self.timeDepart.text!
         
         let next = self.storyboard?.instantiateViewControllerWithIdentifier("MainScreenViewController") as! MainScreenViewController!
         self.navigationController?.pushViewController(next, animated: true)

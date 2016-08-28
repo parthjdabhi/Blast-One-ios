@@ -55,16 +55,16 @@ class ActionItemsViewController: UIViewController {
     
     @IBAction func saveButton(sender: AnyObject) {
         
-        MainScreenViewController.actionList1 = self.field1.text!
-        MainScreenViewController.actionList2 = self.field2.text!
-        MainScreenViewController.actionList3 = self.field3.text!
-        MainScreenViewController.actionList4 = self.field4.text!
-        MainScreenViewController.actionList5 = self.field5.text!
-        MainScreenViewController.actionList6 = self.field6.text!
-        MainScreenViewController.actionList7 = self.field7.text!
-        MainScreenViewController.actionList8 = self.field8.text!
-        MainScreenViewController.actionList9 = self.field9.text!
-        MainScreenViewController.actionList10 = self.field10.text!
+        actionList1 = self.field1.text!
+        actionList2 = self.field2.text!
+        actionList3 = self.field3.text!
+        actionList4 = self.field4.text!
+        actionList5 = self.field5.text!
+        actionList6 = self.field6.text!
+        actionList7 = self.field7.text!
+        actionList8 = self.field8.text!
+        actionList9 = self.field9.text!
+        actionList10 = self.field10.text!
         
         let next = self.storyboard?.instantiateViewControllerWithIdentifier("ActionItemsViewController") as! ActionItemsViewController!
         self.navigationController?.pushViewController(next, animated: true)

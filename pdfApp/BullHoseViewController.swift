@@ -106,10 +106,10 @@ class BullHoseViewController: UIViewController {
             self.presentViewController(alertController, animated: true, completion:nil)
         }
         
-        MainScreenViewController.bullSize = self.size.text!
-        MainScreenViewController.bullPressure = self.pressure.text!
-        MainScreenViewController.bullFitting = self.fitting.text!
-        MainScreenViewController.bullComments = self.comments.text!
+        bullSize = self.size.text!
+        bullPressure = self.pressure.text!
+        bullFitting = self.fitting.text!
+        bullComments = self.comments.text!
         
         let next = self.storyboard?.instantiateViewControllerWithIdentifier("EquipmentObservationViewController") as! EquipmentObservationsViewController!
         self.navigationController?.pushViewController(next, animated: true)

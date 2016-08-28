@@ -49,7 +49,6 @@ class RecommendationActionViewController: UIViewController {
             
             alertController.addAction(OKAction)
             self.presentViewController(alertController, animated: true, completion:nil)
-            
         }
         
         if self.blasterSkills.text == "" {
@@ -64,8 +63,8 @@ class RecommendationActionViewController: UIViewController {
             
         }
         
-        MainScreenViewController.actionRecommendations = self.recommendations.text!
-        MainScreenViewController.actionBlastSkills = self.blasterSkills.text!
+        actionRecommendations = self.recommendations.text!
+        actionBlastSkills = self.blasterSkills.text!
         
         let next = self.storyboard?.instantiateViewControllerWithIdentifier("MainScreenViewController") as! MainScreenViewController!
         self.navigationController?.pushViewController(next, animated: true)

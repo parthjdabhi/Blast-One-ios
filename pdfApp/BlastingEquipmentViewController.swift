@@ -195,17 +195,17 @@ class BlastingEquipmentViewController: UIViewController {
             self.presentViewController(alertController, animated: true, completion:nil)
         }
         
-        MainScreenViewController.blastingBlast = self.blast.text!
-        MainScreenViewController.blastingBrand = self.brand.text!
-        MainScreenViewController.blastingChoke = self.choke.text!
-        MainScreenViewController.blastingAir = self.air.text!
-        MainScreenViewController.blastingInlet = self.inlet.text!
-        MainScreenViewController.blastingMetering = self.metering.text!
-        MainScreenViewController.blastingDeadman = self.deadman.text!
-        MainScreenViewController.blastingRestricting = self.restricting.text!
-        MainScreenViewController.blastingMoisture = self.moisture.text!
-        MainScreenViewController.blastingPusherline = self.pusherline.text!
-        MainScreenViewController.blastingComments = self.comments.text!
+        blastingBlast = self.blast.text!
+        blastingBrand = self.brand.text!
+        blastingChoke = self.choke.text!
+        blastingAir = self.air.text!
+        blastingInlet = self.inlet.text!
+        blastingMetering = self.metering.text!
+        blastingDeadman = self.deadman.text!
+        blastingRestricting = self.restricting.text!
+        blastingMoisture = self.moisture.text!
+        blastingPusherline = self.pusherline.text!
+        blastingComments = self.comments.text!
         
         let next = self.storyboard?.instantiateViewControllerWithIdentifier("EquipmentObservationViewController") as! EquipmentObservationsViewController!
         self.navigationController?.pushViewController(next, animated: true)

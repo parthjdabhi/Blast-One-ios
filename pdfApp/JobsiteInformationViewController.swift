@@ -102,9 +102,9 @@ class JobsiteInformationViewController: UIViewController {
             
         }
         
-        MainScreenViewController.weatherInfo = self.weather.text!
-        MainScreenViewController.hazardsInfo = self.hazards.text!
-        MainScreenViewController.accessInfo = self.access.text!
+        weatherInfo = self.weather.text!
+        hazardsInfo = self.hazards.text!
+        accessInfo = self.access.text!
         
         let next = self.storyboard?.instantiateViewControllerWithIdentifier("MainScreenViewController") as! MainScreenViewController!
         self.navigationController?.pushViewController(next, animated: true)

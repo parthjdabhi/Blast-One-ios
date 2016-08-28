@@ -128,12 +128,12 @@ class Test2ViewController: UIViewController {
             
         }
         
-        MainScreenViewController.theAreaBlasted2 = self.areaBlasted.text!
-        MainScreenViewController.theAbrasiveUsed2 = self.abrasiveUsed.text!
-        MainScreenViewController.theTimeBlast2 = self.timeBlasted.text!
-        MainScreenViewController.theBlastProduction2 = self.blastProduction.text!
-        MainScreenViewController.theAbrasiveConsumption2 = self.abrasiveConsumption.text!
-        MainScreenViewController.theProfileAchieved2 = self.profileAchieved.text!
+        theAreaBlasted2 = self.areaBlasted.text!
+        theAbrasiveUsed2 = self.abrasiveUsed.text!
+        theTimeBlast2 = self.timeBlasted.text!
+        theBlastProduction2 = self.blastProduction.text!
+        theAbrasiveConsumption2 = self.abrasiveConsumption.text!
+        theProfileAchieved2 = self.profileAchieved.text!
         
         let next = self.storyboard?.instantiateViewControllerWithIdentifier("BlastingTestResultsViewController") as! BlastingTestResultsViewController!
         self.navigationController?.pushViewController(next, animated: true)
