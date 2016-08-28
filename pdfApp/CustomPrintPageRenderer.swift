@@ -10,7 +10,7 @@ import UIKit
 
 class CustomPrintPageRenderer: UIPrintPageRenderer {
 
-    let A4PageWidth: CGFloat = 866//595.2
+    let A4PageWidth: CGFloat = 866//595.2 //866
     
     let A4PageHeight: CGFloat = 841.8
     
