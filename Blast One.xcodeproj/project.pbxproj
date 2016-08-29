@@ -7,13 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5E0AC1BB1D73E63E0084E121 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 5E0AC1BA1D73E63E0084E121 /* index.html */; };
 		5E34D2501D72AACD00708A84 /* footer.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5E34D24C1D72AACD00708A84 /* footer.jpg */; };
 		5E34D2511D72AACD00708A84 /* header.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5E34D24D1D72AACD00708A84 /* header.jpg */; };
 		5E34D2521D72AACD00708A84 /* job-pic.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 5E34D24E1D72AACD00708A84 /* job-pic.jpeg */; };
 		5E34D2531D72AACD00708A84 /* index11.html in Resources */ = {isa = PBXBuildFile; fileRef = 5E34D24F1D72AACD00708A84 /* index11.html */; };
 		5E34D25A1D733CCA00708A84 /* index1.html in Resources */ = {isa = PBXBuildFile; fileRef = 5E34D2591D733CCA00708A84 /* index1.html */; };
 		5E34D25D1D733F5D00708A84 /* pump.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5E34D25B1D733F5D00708A84 /* pump.jpg */; };
-		5E34D25E1D733F5D00708A84 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 5E34D25C1D733F5D00708A84 /* index.html */; };
+		5E34D25E1D733F5D00708A84 /* index2.html in Resources */ = {isa = PBXBuildFile; fileRef = 5E34D25C1D733F5D00708A84 /* index2.html */; };
 		5E9980501D718D550018501D /* CustomPrintPageRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E99804D1D718D550018501D /* CustomPrintPageRenderer.swift */; };
 		5E9980511D718D550018501D /* OSAComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E99804E1D718D550018501D /* OSAComposer.swift */; };
 		5E9980521D718D550018501D /* PreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E99804F1D718D550018501D /* PreviewViewController.swift */; };
@@ -84,13 +85,14 @@
 /* Begin PBXFileReference section */
 		2B8BBBE5BD4377C3884FAD30 /* Pods-Blast One.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Blast One.release.xcconfig"; path = "Pods/Target Support Files/Pods-Blast One/Pods-Blast One.release.xcconfig"; sourceTree = "<group>"; };
 		2E55BEA6157F5C0C02D94B2D /* Pods_Blast_One.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Blast_One.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E0AC1BA1D73E63E0084E121 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
 		5E34D24C1D72AACD00708A84 /* footer.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = footer.jpg; sourceTree = "<group>"; };
 		5E34D24D1D72AACD00708A84 /* header.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = header.jpg; sourceTree = "<group>"; };
 		5E34D24E1D72AACD00708A84 /* job-pic.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "job-pic.jpeg"; sourceTree = "<group>"; };
 		5E34D24F1D72AACD00708A84 /* index11.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index11.html; sourceTree = "<group>"; };
 		5E34D2591D733CCA00708A84 /* index1.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index1.html; sourceTree = "<group>"; };
 		5E34D25B1D733F5D00708A84 /* pump.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pump.jpg; sourceTree = "<group>"; };
-		5E34D25C1D733F5D00708A84 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
+		5E34D25C1D733F5D00708A84 /* index2.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index2.html; sourceTree = "<group>"; };
 		5E99804D1D718D550018501D /* CustomPrintPageRenderer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomPrintPageRenderer.swift; sourceTree = "<group>"; };
 		5E99804E1D718D550018501D /* OSAComposer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OSAComposer.swift; sourceTree = "<group>"; };
 		5E99804F1D718D550018501D /* PreviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviewViewController.swift; sourceTree = "<group>"; };
@@ -206,7 +208,8 @@
 				5E34D2581D732B8200708A84 /* Images used */,
 				5E34D24F1D72AACD00708A84 /* index11.html */,
 				5E34D2591D733CCA00708A84 /* index1.html */,
-				5E34D25C1D733F5D00708A84 /* index.html */,
+				5E34D25C1D733F5D00708A84 /* index2.html */,
+				5E0AC1BA1D73E63E0084E121 /* index.html */,
 				5E9980761D719D9E0018501D /* OSA_Form.htm */,
 				5E9980781D719D9E0018501D /* tryit.html */,
 			);
@@ -480,6 +483,7 @@
 				5E9980801D719D9E0018501D /* invoice.html in Resources */,
 				DA00F8231D6E54ED009BE915 /* LaunchScreen.storyboard in Resources */,
 				5E9980841D719D9E0018501D /* tryit.html in Resources */,
+				5E0AC1BB1D73E63E0084E121 /* index.html in Resources */,
 				5E34D2521D72AACD00708A84 /* job-pic.jpeg in Resources */,
 				5E99807D1D719D9E0018501D /* img_footer.jpg in Resources */,
 				5E99807B1D719D9E0018501D /* image1.png in Resources */,
@@ -491,7 +495,7 @@
 				DA00F81B1D6E54ED009BE915 /* Main.storyboard in Resources */,
 				DA00F8771D6F4E08009BE915 /* BlastOne_StackedStrap_Logo_FullColour_POS_RGB.jpeg in Resources */,
 				DA00F8781D6F4E08009BE915 /* Schematic coloured mac.jpg in Resources */,
-				5E34D25E1D733F5D00708A84 /* index.html in Resources */,
+				5E34D25E1D733F5D00708A84 /* index2.html in Resources */,
 				5E34D2501D72AACD00708A84 /* footer.jpg in Resources */,
 				5E99807E1D719D9E0018501D /* img_header.jpg in Resources */,
 			);

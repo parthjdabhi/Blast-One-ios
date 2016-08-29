@@ -171,7 +171,11 @@ class PreviewViewController: UIViewController, UIWebViewDelegate {
         }
     }
     
+    func webViewDidStartLoad(webView: UIWebView) {
+        print("webView Start Load")
+    }
     func webViewDidFinishLoad(webView: UIWebView) {
+        print("webView Finish Load")
         let pdfData = createPdfFile(webView.viewPrintFormatter())
         pdfData.writeToFile("\(AppDelegate.getAppDelegate().getDocDir())/Test1.pdf", atomically: true)
     }

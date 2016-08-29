@@ -75,6 +75,7 @@ class OSAComposer: NSObject {
         let printPageRenderer = CustomPrintPageRenderer()
         
         let printFormatter = UIMarkupTextPrintFormatter(markupText: HTMLContent)
+        printFormatter.maximumContentHeight = 500
         printPageRenderer.addPrintFormatter(printFormatter, startingAtPageAtIndex: 0)
         
         let pdfData = drawPDFUsingPrintPageRenderer(printPageRenderer)
