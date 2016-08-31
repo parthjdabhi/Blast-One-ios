@@ -3438,6 +3438,82 @@ and Information</string>
             </objects>
             <point key="canvasLocation" x="2201" y="356"/>
         </scene>
+        <!--Display Controller-->
+        <scene sceneID="x0F-ym-oHv">
+            <objects>
+                <viewController storyboardIdentifier="DisplayController" automaticallyAdjustsScrollViewInsets="NO" id="GeZ-IV-9SO" customClass="DisplayController" customModule="Blast_One" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Mac-Nq-5yW"/>
+                        <viewControllerLayoutGuide type="bottom" id="Wcn-Ds-NsE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="O5j-dh-UK2">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WW6-Cx-U6m">
+                                <rect key="frame" x="0.0" y="64" width="1024" height="704"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                            </webView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xCS-wi-L9e">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="64"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n2Y-9T-aJo">
+                                        <rect key="frame" x="25" y="18" width="46" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="4iq-q4-GaO"/>
+                                            <constraint firstAttribute="width" constant="46" id="Nf5-2d-VhS"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <state key="normal" title="Back"/>
+                                        <connections>
+                                            <action selector="actionGoToBack:" destination="GeZ-IV-9SO" eventType="touchUpInside" id="Ms7-qr-6FY"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eAt-eR-KwW">
+                                        <rect key="frame" x="953" y="26" width="46" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="55K-92-qkO"/>
+                                            <constraint firstAttribute="width" constant="46" id="HQ0-F7-njh"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <state key="normal" title="Email"/>
+                                        <connections>
+                                            <action selector="actionShare:" destination="GeZ-IV-9SO" eventType="touchUpInside" id="9tk-e1-t6K"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="eAt-eR-KwW" firstAttribute="top" secondItem="xCS-wi-L9e" secondAttribute="top" constant="26" id="0F5-iL-pCK"/>
+                                    <constraint firstItem="n2Y-9T-aJo" firstAttribute="leading" secondItem="xCS-wi-L9e" secondAttribute="leading" constant="25" id="1oc-rn-znh"/>
+                                    <constraint firstAttribute="height" constant="64" id="EvI-dr-KQT"/>
+                                    <constraint firstItem="n2Y-9T-aJo" firstAttribute="top" secondItem="xCS-wi-L9e" secondAttribute="top" constant="18" id="GxR-ZB-YsI"/>
+                                    <constraint firstAttribute="trailing" secondItem="eAt-eR-KwW" secondAttribute="trailing" constant="25" id="Zva-pp-NNa"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="xCS-wi-L9e" secondAttribute="trailing" id="3xw-an-i1B"/>
+                            <constraint firstItem="xCS-wi-L9e" firstAttribute="top" secondItem="O5j-dh-UK2" secondAttribute="top" id="4mt-5X-Yr7"/>
+                            <constraint firstItem="WW6-Cx-U6m" firstAttribute="top" secondItem="Mac-Nq-5yW" secondAttribute="bottom" constant="44" id="A8w-7B-SmP"/>
+                            <constraint firstItem="WW6-Cx-U6m" firstAttribute="leading" secondItem="O5j-dh-UK2" secondAttribute="leadingMargin" constant="-20" id="HLJ-Ed-yZK"/>
+                            <constraint firstItem="Wcn-Ds-NsE" firstAttribute="top" secondItem="WW6-Cx-U6m" secondAttribute="bottom" id="KHW-3H-Z05"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="WW6-Cx-U6m" secondAttribute="trailing" constant="-20" id="StP-uP-ZrZ"/>
+                            <constraint firstItem="xCS-wi-L9e" firstAttribute="leading" secondItem="O5j-dh-UK2" secondAttribute="leading" id="oUF-nY-bks"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="b9X-8i-tPH"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
+                    <connections>
+                        <outlet property="contentView" destination="WW6-Cx-U6m" id="T2D-bG-Bnx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HN2-QP-vu8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3253" y="356"/>
+        </scene>
     </scenes>
     <resources>
         <image name="BlastOne_StackedStrap_Logo_FullColour_POS_RGB.jpeg" width="260" height="240"/>

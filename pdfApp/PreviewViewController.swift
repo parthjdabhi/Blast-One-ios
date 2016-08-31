@@ -40,6 +40,7 @@ class PreviewViewController: UIViewController, UIWebViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        //webPreview.scrollView.scoll
         // Do any additional setup after loading the view.
         
         print(" Directory : \(AppDelegate.getAppDelegate().getDocDir())")

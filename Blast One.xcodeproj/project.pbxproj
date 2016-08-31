@@ -15,6 +15,20 @@
 		5E34D25A1D733CCA00708A84 /* index1.html in Resources */ = {isa = PBXBuildFile; fileRef = 5E34D2591D733CCA00708A84 /* index1.html */; };
 		5E34D25D1D733F5D00708A84 /* pump.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5E34D25B1D733F5D00708A84 /* pump.jpg */; };
 		5E34D25E1D733F5D00708A84 /* index2.html in Resources */ = {isa = PBXBuildFile; fileRef = 5E34D25C1D733F5D00708A84 /* index2.html */; };
+		5E479CC01D77100A002AEDE5 /* DisplayController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E479CBF1D77100A002AEDE5 /* DisplayController.swift */; };
+		5E479CC51D77101F002AEDE5 /* PageOneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E479CC11D77101E002AEDE5 /* PageOneView.swift */; };
+		5E479CC61D77101F002AEDE5 /* PageTwoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E479CC21D77101E002AEDE5 /* PageTwoView.swift */; };
+		5E479CC71D77101F002AEDE5 /* PageOneView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E479CC31D77101F002AEDE5 /* PageOneView.xib */; };
+		5E479CC81D77101F002AEDE5 /* PageTwoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E479CC41D77101F002AEDE5 /* PageTwoView.xib */; };
+		5E479CCB1D77110B002AEDE5 /* SwiftPDFGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E479CCA1D77110B002AEDE5 /* SwiftPDFGenerator.swift */; };
+		5E479CD01D7724B7002AEDE5 /* PageFifthView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E479CCC1D7724B7002AEDE5 /* PageFifthView.xib */; };
+		5E479CD11D7724B7002AEDE5 /* PageFourthView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E479CCD1D7724B7002AEDE5 /* PageFourthView.xib */; };
+		5E479CD21D7724B7002AEDE5 /* PageSixView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E479CCE1D7724B7002AEDE5 /* PageSixView.xib */; };
+		5E479CD31D7724B7002AEDE5 /* PageThreeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E479CCF1D7724B7002AEDE5 /* PageThreeView.xib */; };
+		5E479CD61D7724E9002AEDE5 /* PageFourthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E479CD41D7724E9002AEDE5 /* PageFourthView.swift */; };
+		5E479CD71D7724E9002AEDE5 /* PageThreeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E479CD51D7724E9002AEDE5 /* PageThreeView.swift */; };
+		5E479CDA1D772529002AEDE5 /* PageFifthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E479CD81D772529002AEDE5 /* PageFifthView.swift */; };
+		5E479CDB1D772529002AEDE5 /* PageSixView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E479CD91D772529002AEDE5 /* PageSixView.swift */; };
 		5E9980501D718D550018501D /* CustomPrintPageRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E99804D1D718D550018501D /* CustomPrintPageRenderer.swift */; };
 		5E9980511D718D550018501D /* OSAComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E99804E1D718D550018501D /* OSAComposer.swift */; };
 		5E9980521D718D550018501D /* PreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E99804F1D718D550018501D /* PreviewViewController.swift */; };
@@ -93,6 +107,20 @@
 		5E34D2591D733CCA00708A84 /* index1.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index1.html; sourceTree = "<group>"; };
 		5E34D25B1D733F5D00708A84 /* pump.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pump.jpg; sourceTree = "<group>"; };
 		5E34D25C1D733F5D00708A84 /* index2.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index2.html; sourceTree = "<group>"; };
+		5E479CBF1D77100A002AEDE5 /* DisplayController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisplayController.swift; sourceTree = "<group>"; };
+		5E479CC11D77101E002AEDE5 /* PageOneView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageOneView.swift; sourceTree = "<group>"; };
+		5E479CC21D77101E002AEDE5 /* PageTwoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageTwoView.swift; sourceTree = "<group>"; };
+		5E479CC31D77101F002AEDE5 /* PageOneView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PageOneView.xib; sourceTree = "<group>"; };
+		5E479CC41D77101F002AEDE5 /* PageTwoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PageTwoView.xib; sourceTree = "<group>"; };
+		5E479CCA1D77110B002AEDE5 /* SwiftPDFGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftPDFGenerator.swift; sourceTree = "<group>"; };
+		5E479CCC1D7724B7002AEDE5 /* PageFifthView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PageFifthView.xib; sourceTree = "<group>"; };
+		5E479CCD1D7724B7002AEDE5 /* PageFourthView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PageFourthView.xib; sourceTree = "<group>"; };
+		5E479CCE1D7724B7002AEDE5 /* PageSixView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PageSixView.xib; sourceTree = "<group>"; };
+		5E479CCF1D7724B7002AEDE5 /* PageThreeView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PageThreeView.xib; sourceTree = "<group>"; };
+		5E479CD41D7724E9002AEDE5 /* PageFourthView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageFourthView.swift; sourceTree = "<group>"; };
+		5E479CD51D7724E9002AEDE5 /* PageThreeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageThreeView.swift; sourceTree = "<group>"; };
+		5E479CD81D772529002AEDE5 /* PageFifthView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageFifthView.swift; sourceTree = "<group>"; };
+		5E479CD91D772529002AEDE5 /* PageSixView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageSixView.swift; sourceTree = "<group>"; };
 		5E99804D1D718D550018501D /* CustomPrintPageRenderer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomPrintPageRenderer.swift; sourceTree = "<group>"; };
 		5E99804E1D718D550018501D /* OSAComposer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OSAComposer.swift; sourceTree = "<group>"; };
 		5E99804F1D718D550018501D /* PreviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviewViewController.swift; sourceTree = "<group>"; };
@@ -175,6 +203,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5E0AC1BC1D73F6970084E121 /* Backup Prev Html design */ = {
+			isa = PBXGroup;
+			children = (
+				5E34D24F1D72AACD00708A84 /* index11.html */,
+				5E34D2591D733CCA00708A84 /* index1.html */,
+				5E34D25C1D733F5D00708A84 /* index2.html */,
+				5E9980761D719D9E0018501D /* OSA_Form.htm */,
+				5E9980781D719D9E0018501D /* tryit.html */,
+			);
+			name = "Backup Prev Html design";
+			sourceTree = "<group>";
+		};
 		5E34D2581D732B8200708A84 /* Images used */ = {
 			isa = PBXGroup;
 			children = (
@@ -188,6 +228,27 @@
 				5E9980731D719D9E0018501D /* img_header_sm.jpg */,
 			);
 			name = "Images used";
+			sourceTree = "<group>";
+		};
+		5E479CC91D771026002AEDE5 /* Pdf GenMethod 2 */ = {
+			isa = PBXGroup;
+			children = (
+				5E479CBF1D77100A002AEDE5 /* DisplayController.swift */,
+				5E479CCA1D77110B002AEDE5 /* SwiftPDFGenerator.swift */,
+				5E479CC11D77101E002AEDE5 /* PageOneView.swift */,
+				5E479CC21D77101E002AEDE5 /* PageTwoView.swift */,
+				5E479CC31D77101F002AEDE5 /* PageOneView.xib */,
+				5E479CC41D77101F002AEDE5 /* PageTwoView.xib */,
+				5E479CD51D7724E9002AEDE5 /* PageThreeView.swift */,
+				5E479CD41D7724E9002AEDE5 /* PageFourthView.swift */,
+				5E479CCF1D7724B7002AEDE5 /* PageThreeView.xib */,
+				5E479CCD1D7724B7002AEDE5 /* PageFourthView.xib */,
+				5E479CD81D772529002AEDE5 /* PageFifthView.swift */,
+				5E479CD91D772529002AEDE5 /* PageSixView.swift */,
+				5E479CCC1D7724B7002AEDE5 /* PageFifthView.xib */,
+				5E479CCE1D7724B7002AEDE5 /* PageSixView.xib */,
+			);
+			name = "Pdf GenMethod 2";
 			sourceTree = "<group>";
 		};
 		5E9980531D718D5D0018501D /* PDF Generate */ = {
@@ -206,12 +267,8 @@
 			children = (
 				5E9980851D71A1E70018501D /* Word Image */,
 				5E34D2581D732B8200708A84 /* Images used */,
-				5E34D24F1D72AACD00708A84 /* index11.html */,
-				5E34D2591D733CCA00708A84 /* index1.html */,
-				5E34D25C1D733F5D00708A84 /* index2.html */,
+				5E0AC1BC1D73F6970084E121 /* Backup Prev Html design */,
 				5E0AC1BA1D73E63E0084E121 /* index.html */,
-				5E9980761D719D9E0018501D /* OSA_Form.htm */,
-				5E9980781D719D9E0018501D /* tryit.html */,
 			);
 			path = pdf;
 			sourceTree = "<group>";
@@ -279,6 +336,7 @@
 				DA00F84A1D6E87F6009BE915 /* CustomerInformationViewController.swift */,
 				DA00F84C1D6EB758009BE915 /* JobsiteInformationViewController.swift */,
 				5E9980861D71BF510018501D /* CommonUtils.swift */,
+				5E479CC91D771026002AEDE5 /* Pdf GenMethod 2 */,
 				5E9980531D718D5D0018501D /* PDF Generate */,
 				DA00F86C1D6EBA17009BE915 /* Recommendation & Action */,
 				DA00F8501D6EB7CD009BE915 /* EquipmentObservation */,
@@ -474,17 +532,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				5E34D2531D72AACD00708A84 /* index11.html in Resources */,
+				5E479CD11D7724B7002AEDE5 /* PageFourthView.xib in Resources */,
+				5E479CD21D7724B7002AEDE5 /* PageSixView.xib in Resources */,
 				5E34D25A1D733CCA00708A84 /* index1.html in Resources */,
 				5E99807F1D719D9E0018501D /* img_header_sm.jpg in Resources */,
+				5E479CD01D7724B7002AEDE5 /* PageFifthView.xib in Resources */,
 				5E9980811D719D9E0018501D /* last_item.html in Resources */,
 				5E99807C1D719D9E0018501D /* img_flow.jpg in Resources */,
 				5E34D2511D72AACD00708A84 /* header.jpg in Resources */,
+				5E479CC71D77101F002AEDE5 /* PageOneView.xib in Resources */,
 				5E9980831D719D9E0018501D /* single_item.html in Resources */,
 				5E9980801D719D9E0018501D /* invoice.html in Resources */,
 				DA00F8231D6E54ED009BE915 /* LaunchScreen.storyboard in Resources */,
+				5E479CC81D77101F002AEDE5 /* PageTwoView.xib in Resources */,
 				5E9980841D719D9E0018501D /* tryit.html in Resources */,
 				5E0AC1BB1D73E63E0084E121 /* index.html in Resources */,
 				5E34D2521D72AACD00708A84 /* job-pic.jpeg in Resources */,
+				5E479CD31D7724B7002AEDE5 /* PageThreeView.xib in Resources */,
 				5E99807D1D719D9E0018501D /* img_footer.jpg in Resources */,
 				5E99807B1D719D9E0018501D /* image1.png in Resources */,
 				5E9980791D719D9E0018501D /* Footer_main.jpg in Resources */,
@@ -570,6 +634,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E479CD61D7724E9002AEDE5 /* PageFourthView.swift in Sources */,
+				5E479CDA1D772529002AEDE5 /* PageFifthView.swift in Sources */,
+				5E479CCB1D77110B002AEDE5 /* SwiftPDFGenerator.swift in Sources */,
+				5E479CD71D7724E9002AEDE5 /* PageThreeView.swift in Sources */,
+				5E479CDB1D772529002AEDE5 /* PageSixView.swift in Sources */,
 				DA00F8691D6EB9AF009BE915 /* Test5ViewController.swift in Sources */,
 				DA00F8491D6E844F009BE915 /* MainScreenViewController.swift in Sources */,
 				DA00F8631D6EB973009BE915 /* Test2ViewController.swift in Sources */,
@@ -588,11 +657,14 @@
 				DA00F8701D6EBAFC009BE915 /* ActionItemsViewController.swift in Sources */,
 				DA00F86B1D6EB9C5009BE915 /* Test6ViewController.swift in Sources */,
 				DA00F85A1D6EB8B4009BE915 /* BlastAccessoriesViewController.swift in Sources */,
+				5E479CC51D77101F002AEDE5 /* PageOneView.swift in Sources */,
 				DA00F85F1D6EB93D009BE915 /* BlastingTestResultsViewController.swift in Sources */,
+				5E479CC61D77101F002AEDE5 /* PageTwoView.swift in Sources */,
 				DA00F8181D6E54ED009BE915 /* ViewController.swift in Sources */,
 				DA00F8161D6E54ED009BE915 /* AppDelegate.swift in Sources */,
 				DA00F8471D6E79FC009BE915 /* Screen2ViewController.swift in Sources */,
 				DA00F84D1D6EB758009BE915 /* JobsiteInformationViewController.swift in Sources */,
+				5E479CC01D77100A002AEDE5 /* DisplayController.swift in Sources */,
 				DA00F86E1D6EBA2E009BE915 /* RecommendationActionViewController.swift in Sources */,
 				DA00F8651D6EB984009BE915 /* Test3ViewController.swift in Sources */,
 				DA00F8581D6EB882009BE915 /* BlastingEquipmentViewController.swift in Sources */,
