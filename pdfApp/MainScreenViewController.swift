@@ -571,18 +571,57 @@ class MainScreenViewController: UIViewController {
     @IBAction func saveButton(sender: AnyObject) {
         
         //Can validate necessory information before generating report
+//                if nameOfConsultant == nil {
+//                    //Show alert message for validation for this attribute
+//                   return
+//                }
         
-//        if nameOfConsultant == nil {
-//            //Show alert message for validation for this attribute
-//           return
-//        }
-        
-        let next = self.storyboard?.instantiateViewControllerWithIdentifier("PreviewViewController") as! PreviewViewController!
-        self.navigationController?.pushViewController(next, animated: true)
+        //For Rendering PDF with 2nd Method (FROM UIVIEW)
+        generatePDF()
+    
+        //For Rendering PDG with 1st Method (From HTML)
+        //let next = self.storyboard?.instantiateViewControllerWithIdentifier("PreviewViewController") as! PreviewViewController!
+        //self.navigationController?.pushViewController(next, animated: true)
     }
     
     @IBAction func emailButton(sender: AnyObject) {
         
+    }
+    
+    func generatePDF()
+    {
+        var pages:Array<UIView> = []
+        
+        // Load Views with NibName
+        let page1 = NSBundle.mainBundle().loadNibNamed("PageOneView", owner: self, options: nil).last as! PageOneView
+        let page2 = NSBundle.mainBundle().loadNibNamed("PageTwoView", owner: self, options: nil).last as! PageTwoView
+        let page3 = NSBundle.mainBundle().loadNibNamed("PageThreeView", owner: self, options: nil).last as! PageThreeView
+        let page4 = NSBundle.mainBundle().loadNibNamed("PageFourthView", owner: self, options: nil).last as! PageFourthView
+        let page5 = NSBundle.mainBundle().loadNibNamed("PageFifthView", owner: self, options: nil).last as! PageFifthView
+        let page6 = NSBundle.mainBundle().loadNibNamed("PageSixView", owner: self, options: nil).last as! PageSixView
+        
+        // Fill Views With Data
+        page1.setupViewContent()
+        page2.setupViewContent()
+        page3.setupViewContent()
+        page4.setupViewContent()
+        page5.setupViewContent()
+        page6.setupViewContent()
+        
+        // Generate PDF from pages Array
+        pages.appendContentsOf([page1, page2, page3, page4, page5, page6])
+        let tempFilePath = SwiftPDFGenerator.generatePDFWithPages(pages)
+        let pdfLoc = NSURL(fileURLWithPath: tempFilePath)
+        
+        // present PDF
+        //        let newEventController = self.storyboard!.instantiateViewControllerWithIdentifier("PDFNavigationController") as! UINavigationController
+        //        newEventController.modalPresentationStyle = .PageSheet
+        //        (newEventController.childViewControllers[0] as! DisplayController).url = pdfLoc
+        //        self.presentViewController(next, animated: true, completion: nil)
+        
+        let next = self.storyboard?.instantiateViewControllerWithIdentifier("DisplayController") as! DisplayController!
+        next.url = pdfLoc
+        self.navigationController?.pushViewController(next, animated: true)
     }
 
 }

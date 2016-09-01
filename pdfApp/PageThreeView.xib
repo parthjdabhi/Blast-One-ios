@@ -298,7 +298,7 @@
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VQl-Mg-Jkg">
                     <rect key="frame" x="419" y="148" width="134" height="651"/>
-                    <mutableString key="text">■ Handle and Twinline from leaks
+                    <string key="text">■ Handle and Twinline from leaks
 ■ Abrasive metering valve cleaned, fittings checked / maintained
 ■ Lid and screen (portable hoppers) fitted
 ■ Blast outlet gasket checked
@@ -314,7 +314,7 @@ Check nozzle size for wear
 Nozzle gasket in place (where applicable)
 Blast Abrasive
 Kept dry and protected
-Certificated and batch numbers recorded</mutableString>
+Certificated and batch numbers recorded</string>
                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>

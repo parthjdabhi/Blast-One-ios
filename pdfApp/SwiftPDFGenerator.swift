@@ -32,7 +32,7 @@ public class SwiftPDFGenerator {
                 paragraphStyle.lineBreakMode = label.lineBreakMode
                 paragraphStyle.alignment = label.textAlignment
 
-                NSString(string: label.text!).drawInRect(label.frame, withAttributes: [NSFontAttributeName:label.font, NSParagraphStyleAttributeName:paragraphStyle, NSForegroundColorAttributeName:label.textColor])
+                NSString(string: label.text!).drawInRect(label.frame, withAttributes: [NSFontAttributeName:label.font, NSParagraphStyleAttributeName:paragraphStyle, NSForegroundColorAttributeName:label.textColor,NSBackgroundColorAttributeName:label.backgroundColor ?? UIColor.clearColor()])
             } else if (subview.isKindOfClass(UITextView)) {
                 // Draw Border
                 self.drawLinesUsingUIView(subview, thickness: 0.5, context: context, fillView: (subview.tag==1 ? true : false))

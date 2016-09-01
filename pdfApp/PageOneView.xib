@@ -169,6 +169,9 @@ EBBTYW1wbGUgdGV4dOKAqFNhbXBsZSB0ZXh04oCoU2FtcGxlIHRleHQ
             </subviews>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="dateLabel" destination="HTG-kB-gua" id="je8-IY-osZ"/>
+            </connections>
             <point key="canvasLocation" x="183.5" y="274"/>
         </view>
     </objects>
