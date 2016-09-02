@@ -1290,7 +1290,7 @@ Action Items</string>
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DFU-Nn-Z5o">
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DFU-Nn-Z5o">
                                 <rect key="frame" x="822" y="680" width="178" height="64"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="64" id="CpW-fZ-Xzf"/>

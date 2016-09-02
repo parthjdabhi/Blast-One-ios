@@ -43,3 +43,16 @@ func getAssetUrl(mPhasset : PHAsset, completionHandler : ((responseURL : NSURL?)
     }
     
 }
+
+func getAssetThumbnail(asset: PHAsset, completionHandler : ((thumbnail : UIImage) -> Void))  {
+    let manager = PHImageManager.defaultManager()
+    let option = PHImageRequestOptions()
+    //var thumbnail = UIImage()
+    option.synchronous = true
+    manager.requestImageForAsset(asset, targetSize: CGSize(width: 100.0, height: 100.0), contentMode: .AspectFit, options: option, resultHandler: {(result, info)->Void in
+        if result != nil {
+            completionHandler(thumbnail: result!)
+        }
+        
+    })
+}

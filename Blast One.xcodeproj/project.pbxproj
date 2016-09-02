@@ -45,6 +45,7 @@
 		5E9980831D719D9E0018501D /* single_item.html in Resources */ = {isa = PBXBuildFile; fileRef = 5E9980771D719D9E0018501D /* single_item.html */; };
 		5E9980841D719D9E0018501D /* tryit.html in Resources */ = {isa = PBXBuildFile; fileRef = 5E9980781D719D9E0018501D /* tryit.html */; };
 		5E9980871D71BF510018501D /* CommonUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9980861D71BF510018501D /* CommonUtils.swift */; };
+		5E9CE8211D799BB300A13B84 /* ic_camera.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E9CE8201D799BB300A13B84 /* ic_camera.png */; };
 		D25494A7250B0D6FEC2B36C7 /* Pods_Blast_One.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E55BEA6157F5C0C02D94B2D /* Pods_Blast_One.framework */; };
 		DA00F8161D6E54ED009BE915 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA00F8151D6E54ED009BE915 /* AppDelegate.swift */; };
 		DA00F8181D6E54ED009BE915 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA00F8171D6E54ED009BE915 /* ViewController.swift */; };
@@ -137,6 +138,7 @@
 		5E9980771D719D9E0018501D /* single_item.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = single_item.html; sourceTree = "<group>"; };
 		5E9980781D719D9E0018501D /* tryit.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = tryit.html; sourceTree = "<group>"; };
 		5E9980861D71BF510018501D /* CommonUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonUtils.swift; sourceTree = "<group>"; };
+		5E9CE8201D799BB300A13B84 /* ic_camera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_camera.png; sourceTree = "<group>"; };
 		DA00F8121D6E54ED009BE915 /* Blast One.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Blast One.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA00F8151D6E54ED009BE915 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DA00F8171D6E54ED009BE915 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -418,6 +420,7 @@
 		DA00F8741D6F4DE2009BE915 /* Pictures */ = {
 			isa = PBXGroup;
 			children = (
+				5E9CE8201D799BB300A13B84 /* ic_camera.png */,
 				DA00F8751D6F4E08009BE915 /* BlastOne_StackedStrap_Logo_FullColour_POS_RGB.jpeg */,
 				DA00F8761D6F4E08009BE915 /* Schematic coloured mac.jpg */,
 			);
@@ -551,6 +554,7 @@
 				5E479CD31D7724B7002AEDE5 /* PageThreeView.xib in Resources */,
 				5E99807D1D719D9E0018501D /* img_footer.jpg in Resources */,
 				5E99807B1D719D9E0018501D /* image1.png in Resources */,
+				5E9CE8211D799BB300A13B84 /* ic_camera.png in Resources */,
 				5E9980791D719D9E0018501D /* Footer_main.jpg in Resources */,
 				5E9980821D719D9E0018501D /* OSA_Form.htm in Resources */,
 				5E34D25D1D733F5D00708A84 /* pump.jpg in Resources */,

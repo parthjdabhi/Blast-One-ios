@@ -8,6 +8,27 @@
 
 import UIKit
 
+// Newly added variables For saving input values
+var jobSitePicturesURL:Array<NSURL>?
+var jobSitePictures:Array<UIImage>?
+
+var Airc_Pictures:Array<UIImage>?
+var BHose_Pictures:Array<UIImage>?
+var AirD_Pictures:Array<UIImage>?
+var BEqu_Pictures:Array<UIImage>?
+var BAce_Pictures:Array<UIImage>?
+
+var BAbr_Pictures:Array<UIImage>?
+var Pcheck_Pictures:Array<UIImage>?
+
+var BT1_Pictures:Array<UIImage>?
+var BT2_Pictures:Array<UIImage>?
+var BT3_Pictures:Array<UIImage>?
+var BT4_Pictures:Array<UIImage>?
+var BT5_Pictures:Array<UIImage>?
+var BT6_Pictures:Array<UIImage>?
+
+// Old Variables
 var introAnswer1:String?
 var introAnswer2:String?
 var pressureCheck1:String?
@@ -27,6 +48,7 @@ var theProjectName:String?
 var theAddress:String?
 var theTimeArrived:String?
 var theTimeDeparted:String?
+
 var actionRecommendations:String?
 var actionBlastSkills:String?
 
@@ -585,7 +607,16 @@ class MainScreenViewController: UIViewController {
     }
     
     @IBAction func emailButton(sender: AnyObject) {
-        
+//        var url:NSURL?
+//        if let url = self.url {
+//            if let contentView = self.contentView {
+//                print(url)
+//                contentView.loadRequest(NSURLRequest(URL: url))
+//            }
+//        }
+//        let objectsToShare: Array<AnyObject> = [NSData(contentsOfURL: url!)!]
+//        let activityVC = UIActivityViewController(activityItems: objectsToShare, applicationActivities: nil)
+//        self.presentViewController(activityVC, animated: true, completion: nil)
     }
     
     func generatePDF()
@@ -761,7 +792,29 @@ func printAllValues()
     
 }
 
-func resetAllValues() {
+func resetAllValues()
+{
+    //Variables Added Newly
+    jobSitePicturesURL = nil
+    jobSitePictures = nil
+    
+    Airc_Pictures = nil
+    BHose_Pictures = nil
+    AirD_Pictures = nil
+    BEqu_Pictures = nil
+    BAce_Pictures = nil
+    
+    BAbr_Pictures = nil
+    Pcheck_Pictures = nil
+    
+    BT1_Pictures = nil
+    BT2_Pictures = nil
+    BT3_Pictures = nil
+    BT4_Pictures = nil
+    BT5_Pictures = nil
+    BT6_Pictures = nil
+    
+    //Variables Before
     introAnswer1 = nil
     introAnswer2 = nil
     pressureCheck1 = nil

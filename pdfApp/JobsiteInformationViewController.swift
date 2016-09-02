@@ -45,7 +45,13 @@ class JobsiteInformationViewController: UIViewController {
     @IBAction func photoButton(sender: AnyObject) {
         
         let vc = BSImagePickerViewController()
-        vc.maxNumberOfSelections = 20
+        vc.maxNumberOfSelections = 3
+        
+        vc.takePhotoIcon = UIImage(named: "ic_camera")
+        vc.takePhotos = true;
+        
+        jobSitePicturesURL = []
+        jobSitePictures = []
         
         bs_presentImagePickerController(vc, animated: true,
                                         select: { (asset: PHAsset) -> Void in
@@ -59,7 +65,14 @@ class JobsiteInformationViewController: UIViewController {
                 for asset in assets {
                     getAssetUrl(asset, completionHandler: { (responseURL) in
                         print(responseURL)
+                        if let url = responseURL {
+                                jobSitePicturesURL?.append(url)
+                        }
                     })
+                    getAssetThumbnail(asset, completionHandler: { (thumbnail) in
+                        jobSitePictures?.append(thumbnail)
+                    })
+                    
                 }
             }, completion: nil)
     }

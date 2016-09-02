@@ -66,8 +66,7 @@ class ActionItemsViewController: UIViewController {
         actionList9 = self.field9.text!
         actionList10 = self.field10.text!
         
-        let next = self.storyboard?.instantiateViewControllerWithIdentifier("ActionItemsViewController") as! ActionItemsViewController!
-        self.navigationController?.pushViewController(next, animated: true)
+        self.navigationController?.popViewControllerAnimated(true)
     }
 
 }

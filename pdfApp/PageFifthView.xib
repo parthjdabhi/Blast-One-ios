@@ -341,6 +341,35 @@
             </subviews>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="img_BT1" destination="zL3-Ue-sIJ" id="BLm-2f-gCs"/>
+                <outlet property="img_BT2" destination="ffq-2V-snl" id="nTo-yS-Xni"/>
+                <outlet property="img_BT3" destination="N2m-pk-7Pt" id="WH5-2y-vbS"/>
+                <outlet property="lblBT1_Abrasive_Consumption_lbs_hr" destination="zeN-Mp-Rup" id="dXv-l2-3HZ"/>
+                <outlet property="lblBT1_Abrasive_Used_lbs" destination="joK-zy-Ttp" id="meY-pT-NnP"/>
+                <outlet property="lblBT1_Area_Blasted_sqft" destination="cmR-7O-cj1" id="hup-SB-1CX"/>
+                <outlet property="lblBT1_Blasting_Prod_Rate_sqft_hr" destination="dPv-cV-xAk" id="u5Q-zl-Qwp"/>
+                <outlet property="lblBT1_Comments" destination="k0N-w2-3UL" id="L56-Wh-zBS"/>
+                <outlet property="lblBT1_MoistureSeprator" destination="cb4-10-2e8" id="SWZ-tR-U1A"/>
+                <outlet property="lblBT1_Profile_Achieved_mils" destination="YyI-uJ-Szy" id="bTt-cm-kiq"/>
+                <outlet property="lblBT1_Time_Blasted_hrs" destination="1Cn-IH-WGc" id="4Sz-tf-B2p"/>
+                <outlet property="lblBT2_Abrasive_Consumption_lbs_hr" destination="Ac6-he-MJD" id="YCd-aV-1bE"/>
+                <outlet property="lblBT2_Abrasive_Used_lbs" destination="Xkb-Lh-yf8" id="RSl-zI-EG0"/>
+                <outlet property="lblBT2_Area_Blasted_sqft" destination="rmN-DK-gtN" id="Ews-6D-GGe"/>
+                <outlet property="lblBT2_Blasting_Prod_Rate_sqft_hr" destination="xdj-kq-0iN" id="GBu-8Q-2VD"/>
+                <outlet property="lblBT2_Comments" destination="Yt5-LD-lNY" id="veH-ow-TND"/>
+                <outlet property="lblBT2_MoistureSeprator" destination="jye-Us-ueA" id="uOF-mT-2FZ"/>
+                <outlet property="lblBT2_Profile_Achieved_mils" destination="TiX-jP-11A" id="H1c-sj-duI"/>
+                <outlet property="lblBT2_Time_Blasted_hrs" destination="ld3-kd-XfB" id="yVN-B0-dPa"/>
+                <outlet property="lblBT3_Abrasive_Consumption_lbs_hr" destination="4cd-ru-iCl" id="zz2-7O-ErZ"/>
+                <outlet property="lblBT3_Abrasive_Used_lbs" destination="Red-r6-Gko" id="ObG-E6-GYO"/>
+                <outlet property="lblBT3_Area_Blasted_sqft" destination="Rrg-H7-E9L" id="1ng-u0-Pc5"/>
+                <outlet property="lblBT3_Blasting_Prod_Rate_sqft_hr" destination="f7i-ok-PyW" id="c1a-2S-JPM"/>
+                <outlet property="lblBT3_Comments" destination="DBH-IF-VGU" id="VZJ-6E-o60"/>
+                <outlet property="lblBT3_MoistureSeprator" destination="aRp-Gz-dhs" id="kXj-NU-a9l"/>
+                <outlet property="lblBT3_Profile_Achieved_mils" destination="fb3-FN-meh" id="RCc-8e-FTU"/>
+                <outlet property="lblBT3_Time_Blasted_hrs" destination="M1L-1u-ZXK" id="V1T-W8-0Xg"/>
+            </connections>
             <point key="canvasLocation" x="383.5" y="280"/>
         </view>
     </objects>

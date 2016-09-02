@@ -52,7 +52,12 @@ class Test4ViewController: UIViewController {
     @IBAction func photoButton(sender: AnyObject) {
         
         let vc = BSImagePickerViewController()
-        vc.maxNumberOfSelections = 20
+        vc.maxNumberOfSelections = 1
+        
+        vc.takePhotoIcon = UIImage(named: "ic_camera")
+        vc.takePhotos = true;
+        
+        BT4_Pictures = []
         
         bs_presentImagePickerController(vc, animated: true,
                                         select: { (asset: PHAsset) -> Void in
@@ -63,6 +68,11 @@ class Test4ViewController: UIViewController {
                 print("Cancel: \(assets)")
             }, finish: { (assets: [PHAsset]) -> Void in
                 print("Finish: \(assets)")
+                for asset in assets {
+                    getAssetThumbnail(asset, completionHandler: { (thumbnail) in
+                        BT4_Pictures?.append(thumbnail)
+                    })
+                }
             }, completion: nil)
     }
     

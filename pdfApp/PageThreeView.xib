@@ -322,6 +322,32 @@ Certificated and batch numbers recorded</string>
             </subviews>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="img_BAbr" destination="Vxq-HC-Z3a" id="2SY-vc-q1H"/>
+                <outlet property="img_BAcc" destination="zUf-Nb-jgs" id="T9N-Qw-xGx"/>
+                <outlet property="img_BEqu" destination="k0f-fB-NlM" id="m3k-27-ZTr"/>
+                <outlet property="lblBAbr_Comments" destination="p4Y-kg-5hF" id="aYf-BR-52a"/>
+                <outlet property="lblBAbr_Grade" destination="Moj-db-QtK" id="OMl-Gc-wGj"/>
+                <outlet property="lblBAbr_Lbs_on_site" destination="4Un-K6-d1k" id="0fj-4A-KZI"/>
+                <outlet property="lblBAbr_Profile_Req" destination="ONX-Vs-Ci7" id="FcI-bh-Ceg"/>
+                <outlet property="lblBAbr_Storage" destination="11X-Yx-Fmx" id="nEm-If-Ne7"/>
+                <outlet property="lblBAbr_Type" destination="oRr-2D-YsV" id="tR0-C7-lNe"/>
+                <outlet property="lblBAcc_BNozzletypeizeDeadmanType" destination="c3L-pV-Ncz" id="oGv-SS-GdJ"/>
+                <outlet property="lblBAcc_Comments" destination="kAJ-X2-jUn" id="dX9-yR-Qrw"/>
+                <outlet property="lblBAcc_ExthoseIDLen" destination="3jU-Bb-SdI" id="XyI-zs-8kK"/>
+                <outlet property="lblBAcc_WhiphoseIDLen" destination="p1I-8j-fdP" id="N09-ai-vqC"/>
+                <outlet property="lblBEqu_Air_Leaks" destination="ayQ-0A-aBn" id="Pjs-d6-9xB"/>
+                <outlet property="lblBEqu_Blast_Pot_Size" destination="h2Y-lE-XGT" id="Ue7-wc-un8"/>
+                <outlet property="lblBEqu_Brand" destination="dMO-SK-lIK" id="l1X-g9-RvQ"/>
+                <outlet property="lblBEqu_Choke_Valve_used" destination="1ul-h8-mIA" id="xDc-dS-Jxc"/>
+                <outlet property="lblBEqu_Comments" destination="bPb-jE-dZ9" id="Pm2-uo-2nr"/>
+                <outlet property="lblBEqu_Deadman_controls" destination="Qr1-Wx-RMj" id="paa-sB-VUZ"/>
+                <outlet property="lblBEqu_Inlet_valve" destination="6Au-QN-86b" id="6rn-WS-wJB"/>
+                <outlet property="lblBEqu_Metering_Valves" destination="RTf-9e-cVU" id="tja-Rk-poy"/>
+                <outlet property="lblBEqu_Moisture_Separator" destination="aGs-bh-NdX" id="SRE-vS-6ky"/>
+                <outlet property="lblBEqu_Pusherline_size" destination="9iZ-m2-AQn" id="abh-mr-fbN"/>
+                <outlet property="lblBEqu_Restricting_fittings" destination="n5U-dc-DNM" id="Xdy-hh-aGy"/>
+            </connections>
             <point key="canvasLocation" x="523.5" y="-471"/>
         </view>
     </objects>

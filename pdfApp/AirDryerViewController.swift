@@ -44,7 +44,12 @@ class AirDryerViewController: UIViewController {
     @IBAction func photoButton(sender: AnyObject) {
         
         let vc = BSImagePickerViewController()
-        vc.maxNumberOfSelections = 20
+        vc.maxNumberOfSelections = 1
+        
+        vc.takePhotoIcon = UIImage(named: "ic_camera")
+        vc.takePhotos = true;
+        
+        AirD_Pictures = []
         
         bs_presentImagePickerController(vc, animated: true,
                                         select: { (asset: PHAsset) -> Void in
@@ -55,6 +60,11 @@ class AirDryerViewController: UIViewController {
                 print("Cancel: \(assets)")
             }, finish: { (assets: [PHAsset]) -> Void in
                 print("Finish: \(assets)")
+                for asset in assets {
+                    getAssetThumbnail(asset, completionHandler: { (thumbnail) in
+                        AirD_Pictures?.append(thumbnail)
+                    })
+                }
             }, completion: nil)
     }
     

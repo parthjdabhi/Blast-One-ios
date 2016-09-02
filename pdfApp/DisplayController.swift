@@ -2,7 +2,9 @@
 import UIKit
 
 class DisplayController: UIViewController {
+    
     @IBOutlet var contentView: UIWebView!
+    
     var url:NSURL?
 
     // MARK: - Controller Implementation
@@ -25,13 +27,12 @@ class DisplayController: UIViewController {
         self.navigationController?.popViewControllerAnimated(true)
     }
     
-    @IBAction func actionShare(sender: AnyObject) {
-        shareButtonTouched()
-    }
-
-    func shareButtonTouched() {
+    @IBAction func actionShare(sender: UIButton)
+    {
         let objectsToShare: Array<AnyObject> = [NSData(contentsOfURL: url!)!]
         let activityVC = UIActivityViewController(activityItems: objectsToShare, applicationActivities: nil)
+        activityVC.popoverPresentationController?.sourceView = sender
+        activityVC.popoverPresentationController?.sourceRect = sender.bounds
         self.presentViewController(activityVC, animated: true, completion: nil)
     }
 }

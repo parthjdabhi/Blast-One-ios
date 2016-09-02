@@ -68,6 +68,12 @@
             </subviews>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="lblAction_Items" destination="msz-0Y-ttz" id="GwR-mh-DYw"/>
+                <outlet property="lblBlaster_skill_level_technique" destination="bPb-jE-dZ9" id="QaW-ww-r0F"/>
+                <outlet property="lblRecommendations" destination="dyi-Sg-IF2" id="7lb-F1-4Q6"/>
+                <outlet property="lblWrap_Up" destination="1z8-eU-FGc" id="Tx9-Pa-qzO"/>
+            </connections>
             <point key="canvasLocation" x="383.5" y="280"/>
         </view>
     </objects>
