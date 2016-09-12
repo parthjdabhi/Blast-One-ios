@@ -7,7 +7,8 @@ let SwiftPdfGeneratorCompressionValue:CGFloat = 0.5
 public class SwiftPDFGenerator {
 
     public static func generatePDFWithPages(pages:Array<UIView>) -> String {
-        let filePath:String = NSTemporaryDirectory().stringByAppendingPathComponent("report").stringByAppendingPathExtension("pdf")!
+        let tempFilePath:String = NSTemporaryDirectory().stringByAppendingPathComponent("OSA_Form_\(convertDateFormater(NSDate()))").stringByAppendingPathExtension("pdf")!
+        let filePath = "\(AppDelegate.getAppDelegate().getDocDir())/OSA_Form_\(convertDateFormater(NSDate())).pdf"
         UIGraphicsBeginPDFContextToFile(filePath, CGRect.zero, nil)
         let context = UIGraphicsGetCurrentContext()
 
@@ -179,4 +180,21 @@ extension String {
         let nsSt = self as NSString
         return nsSt.stringByAppendingPathExtension(ext)
     }
+}
+
+func convertDateFormater(date: NSDate) -> String {
+    let dateFormatter = NSDateFormatter()
+//    dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
+//    dateFormatter.timeZone = NSTimeZone(name: "UTC")
+//    
+//    guard let date = dateFormatter.dateFromString(date) else {
+//        assert(false, "no date from string")
+//        return ""
+//    }
+    
+    dateFormatter.dateFormat = "dd_MM_yyyy_HH_mm"
+//    dateFormatter.timeZone = NSTimeZone(name: "UTC")
+    let timeStamp = dateFormatter.stringFromDate(date)
+    
+    return timeStamp
 }

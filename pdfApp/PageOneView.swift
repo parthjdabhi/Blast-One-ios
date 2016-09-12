@@ -30,7 +30,7 @@ class PageOneView: UIView
         lbl_Consultant .text = nameOfConsultant ?? ""
         lbl_Date.text = theDate ?? ""
         lbl_Customer.text = nameOfCustomer ?? ""
-        lbl_Facility.text = theDate ?? ""
+        lbl_Facility.text = "" ?? ""
         lbl_Product_Process.text = introAnswer1 ?? ""
         
         lbl_Job_Details.text = introAnswer2 ?? ""
